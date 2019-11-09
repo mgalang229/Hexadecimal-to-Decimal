@@ -13,7 +13,9 @@ int main(){
 	
 	while (num[i] > '\0'){
 	
-		if(num[i] == '1'){
+		if(num[i] == '0'){
+			hexadecimal[i] = 0;
+		} else if(num[i] == '1'){
 			hexadecimal[i] = 1;
 		} else if(num[i] == '2'){
 			hexadecimal[i] = 2;
@@ -31,17 +33,17 @@ int main(){
 			hexadecimal[i] = 8;
 		} else if(num[i] == '9'){
 			hexadecimal[i] = 9;
-		} else if(num[i] == 'A'){
+		} else if(num[i] == 'A' || num[i] == 'a'){
 			hexadecimal[i] = 10;
-		} else if(num[i] == 'B'){
+		} else if(num[i] == 'B' || num[i] == 'b'){
 			hexadecimal[i] = 11;
-		} else if(num[i] == 'C'){
+		} else if(num[i] == 'C' || num[i] == 'c'){
 			hexadecimal[i] = 12;
-		} else if(num[i] == 'D'){
+		} else if(num[i] == 'D' || num[i] == 'd'){
 			hexadecimal[i] = 13;
-		} else if(num[i] == 'E'){
+		} else if(num[i] == 'E' || num[i] == 'e'){
 			hexadecimal[i] = 14;
-		} else if(num[i] == 'F'){
+		} else if(num[i] == 'F' || num[i] == 'f'){
 			hexadecimal[i] = 15;
 		} else{
 			cout << "Wrong Input";
